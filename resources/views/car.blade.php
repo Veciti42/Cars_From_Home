@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>{{$car->title}}</title>
+    </head>
+    <body>
+        <ul>
+            <li>{{$car->title}}</li>
+            <li>{{$car->producer}}</li>
+            <li>{{$car->number_of_doors}}</li>
+        </ul>
+    </body>
+</html>

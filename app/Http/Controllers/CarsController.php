@@ -11,4 +11,11 @@ class CarsController extends Controller
         $cars = Car::all();
         return view('cars', compact('cars'));
     }
+
+    public function show($id)
+    {
+        return view('car', [
+            'car' => Car::findOrFail($id)
+        ]);
+    }
 }
